@@ -1,12 +1,15 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request, render_template
 import os
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def index():
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    if request.method == 'GET':
+        return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    else:
+        return render_template('index.html')
 
 
 if __name__ == '__main__':
