@@ -71,7 +71,7 @@ def converter():
     jornalzip.close()
 
     imap.logout()
-
+    time.sleep(5)
     enviar()
 
     shutil.rmtree('arqs')
