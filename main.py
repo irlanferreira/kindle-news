@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET','POST'])
 def index():
     if request.method == 'GET':
-        return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+        return render_template('index.html')
     else:
         return render_template('index.html')
 
