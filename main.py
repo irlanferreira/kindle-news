@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 import os
+import converter
 
 app = Flask(__name__)
 
@@ -9,7 +10,8 @@ def index():
     if request.method == 'GET':
         return render_template('index.html')
     else:
-        return render_template('index.html')
+        converter
+        return 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 
 
 if __name__ == '__main__':
