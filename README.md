@@ -1,23 +1,3 @@
----
-title: Flask
-description: A popular minimal server framework for Python
-tags:
-  - python
-  - flask
----
+Me inscrevi em uma Newsletter que envia diaramente uma edição no meu email. Porém, acho que seria muito tedioso abrir o email para ler notícia, eu queria algo mais dinâmico!
 
-# Python Flask Example
-
-This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a simple JSON response.
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/zUcpux)
-
-## ✨ Features
-
-- Python
-- Flask
-
-## 💁‍♀️ How to use
-
-- Install Python requirements `pip install -r requirements.txt`
-- Start the server for development `python3 main.py`
+Então, construí um sistema que pega o último email enviado pela Newsletter, converte o html para uma versão local do mesmo, compacta, transforma em epub, e envia para meu kindle.
