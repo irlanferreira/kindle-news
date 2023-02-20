@@ -14,11 +14,11 @@ from pathlib import Path
 def enviar():
     smt = smtplib.SMTP('smtp.gmail.com', 587)
     smt.starttls()
-    smt.login('irlanferreiradasilva2@gmail.com', 'dfwhlvjwpskbmazm')
+    smt.login('email', 'senha')
 
     menssagem = MIMEMultipart()
-    menssagem['From'] = 'irlanferreiradasilva2@gmail.com'
-    menssagem['To'] = 'irlanferreiradasilva2_cpt0db@kindle.com'
+    menssagem['From'] = 'email'
+    menssagem['To'] = 'email_kindle'
     menssagem['Subject'] = 'convert'
 
 
