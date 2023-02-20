@@ -11,7 +11,7 @@ def index():
         return render_template('index.html')
     else:
         converter.converter()
-        return 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+        return 'Enviado com sucesso.'
 
 
 if __name__ == '__main__':
